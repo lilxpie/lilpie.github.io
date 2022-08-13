@@ -1,0 +1,229 @@
+@import url("https://use.typekit.net/rgi8dgq.css");
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color:rgb(74, 0, 74);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 200px;
+}
+
+.logo{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+/*rgb(255, 0, 225)*/
+
+.navigation a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover {
+    color: rgb(0, 51, 255);
+}
+
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(lake.png) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} 
+
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin: 35px 0px;
+    color:rgb(74, 0, 74);
+    font-size: 3em;
+    font-weight: 600;
+}
+/*rgb(0, 51, 255)*/
+
+.main h3 {
+    color:white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.main-btn{
+    color: white;
+    background-color:rgb(74, 0, 74);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover{
+    background-color: rgb(51, 0, 255);
+    transform: scale(1.1);
+}
+
+.social-icons a{
+    color: white;
+    font-size: 1.7em;
+    padding-right: 50px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: darkmagenta;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 20.6em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    padding: 25px;
+    margin:15px;
+    border-radius: 10px;
+    transition: 0.7s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: darkmagenta;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color: darkmagenta;
+    font-size: 1.2em;
+    font-family: 700;
+    margin: 10px;
+}
+
+.projects{
+    background-color: darkmagenta;
+}
+
+.projects .title{
+    color: white;
+}
+
+#process{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 100px;
+    align-items: center;
+    text-shadow: 0 5px 25px rgba(1, 1, 1, 35%);
+}
+
+.footer{
+    background-color: darkmagenta;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1em 2em;
+}
+
+.footer-title{
+    font-weight: 600;
+}
+
+.footer-title span{
+    font-size: 1.1em;
+    color: rgb(223, 231, 0);
+}
+
+.footer .social-icons a{
+    font-size: 1.5em;
+    padding-right: 22px;
+}
+
+@media (max-width:1020px) {
+    header{
+        padding: 12px 20px;
+        
+    }
+    .logo{
+        font-size: 1.5em;
+    }
+}
+@media (max-width:600px){
+    .logo{
+        font-size: 1em;
+    }
+
+    .navigation a{
+        font-size: 0.8em;
+        padding-left: 12px;
+    }
+
+    section{
+        padding: 10px 30px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+    
+    .footer-title span{
+        font-size: 0.9em;
+    }
+    
+    .footer .social-icons a{
+        font-size: 1em;
+        padding-right: 12px;
+    }
+}
